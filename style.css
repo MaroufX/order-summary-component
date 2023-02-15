@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+.wrapper {
+    width: 1440px;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    /* background-size: cover; */
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.card {
+
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 150px;
+}
+
+.card-header {}
+
+.card-header img {
+    width: 100%;
+
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.price {
+
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, .2);
+    gap: 10px;
+
+
+}
+
+.annual {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    /* background-color: red; */
+    text-align: left;
+
+}
+
+.plan {
+    font-weight: bold;
+    display: block
+}
+
+.year {
+    display: block
+}
+
+.payment {
+
+    width: 100%;
+    border-radius: 15px;
+    background-color: hsl(245, 75%, 52%);
+    color: aliceblue;
+    border-color: hsl(245, 75%, 52%);
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.cancel a {
+
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 375px) {
+    .wrapper {
+        background: url(images/pattern-background-mobile.svg) no-repeat;
+        /* background-color: red; */
+        width: 375px;
+        
+
+
+    }
+    .card{
+        margin-top:70px ;
+    }
+
+}
